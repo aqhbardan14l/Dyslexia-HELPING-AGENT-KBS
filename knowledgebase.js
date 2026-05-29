@@ -1,4 +1,4 @@
-[29/5/2026 4:08 PM] Ggmwe: function generateResponse(input) {
+function generateResponse(input) {
 
     // =========================
     // DYSLEXIA SUPPORT MODULE
@@ -78,7 +78,7 @@ dyslexia, study, stress
         `;
     }
 }
-[29/5/2026 4:15 PM] Ggmwe: function generateResponse(input) {
+function generateResponse(input) {
 
     // =========================
     // DYSLEXIA MODULE
@@ -196,7 +196,7 @@ dyslexia, study, stress, memory, focus
         `;
     }
 }
-[29/5/2026 4:21 PM] Ggmwe: function generateResponse(input) {
+function generateResponse(input) {
 
     input = input.toLowerCase();
 
@@ -336,7 +336,7 @@ dyslexia, study, stress, memory, focus
         input.includes("cannot focus") ||
         input.includes("lose focus") ||
         input.includes("not focus") ||
-[29/5/2026 4:21 PM] Ggmwe: input.includes("hard to concentrate")
+        input.includes("hard to concentrate")
     ) {
         return `
 🎯 <b>Focus Support System</b><br><br>
