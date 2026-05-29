@@ -1,27 +1,28 @@
 function generateResponse(input) {
 
     // =========================
-    // DYSLEXIA SUPPORT MODULE
+    // DYSLEXIA MODULE
     // =========================
     if (
         input.includes("dyslexia") ||
         input.includes("reading difficulty") ||
-        input.includes("spelling")
+        input.includes("spelling") ||
+        input.includes("word recognition")
     ) {
         return `
-🧠 <b>Dyslexia Support Guide</b><br><br>
+🧠 <b>Dyslexia Support</b><br><br>
 
-• Break text into small chunks<br>
-• Use simple and clear sentences<br>
-• Read slowly and step by step<br>
-• Highlight important keywords<br><br>
+• Break information into small parts<br>
+• Use simple words<br>
+• Highlight keywords<br>
+• Read slowly and step by step<br><br>
 
-💡 Tip: Learning becomes easier when information is simplified.
+💡 Focus: Improve readability through simplification.
         `;
     }
 
     // =========================
-    // STUDY SUPPORT MODULE
+    // STUDY MODULE
     // =========================
     else if (
         input.includes("study") ||
@@ -29,52 +30,89 @@ function generateResponse(input) {
         input.includes("revision")
     ) {
         return `
-📚 <b>Study Support System</b><br><br>
+📚 <b>Study Support</b><br><br>
 
-• Focus on one topic at a time<br>
-• Use bullet points for notes<br>
-• Take short breaks (Pomodoro method)<br>
-• Repeat important concepts<br><br>
+• Use short study sessions<br>
+• Summarize notes<br>
+• Focus on one topic<br>
+• Avoid multitasking<br><br>
 
-💡 Tip: Consistency is more important than long hours.
+💡 Tip: Consistency > long hours
         `;
     }
 
     // =========================
-    // STRESS SUPPORT MODULE
+    // STRESS / EMOTION MODULE
     // =========================
     else if (
         input.includes("stress") ||
         input.includes("anxiety") ||
-        input.includes("pressure")
+        input.includes("pressure") ||
+        input.includes("overwhelmed")
     ) {
         return `
-🌿 <b>Stress Management Support</b><br><br>
+🌿 <b>Emotional Support</b><br><br>
 
-• Take deep breathing slowly<br>
-• Focus on one task only<br>
-• Avoid multitasking<br>
-• Rest when overwhelmed<br><br>
+• Take deep breaths<br>
+• Rest when tired<br>
+• Focus on one task<br>
+• Don’t rush yourself<br><br>
 
-💡 Tip: Small progress is still progress.
+💡 Small progress is still progress
         `;
     }
 
     // =========================
-    // GENERAL AI RESPONSE
+    // MEMORY MODULE
+    // =========================
+    else if (
+        input.includes("memory") ||
+        input.includes("forget") ||
+        input.includes("remember")
+    ) {
+        return `
+🧠 <b>Memory Support</b><br><br>
+
+• Use repetition techniques<br>
+• Break info into chunks<br>
+• Use visual learning<br>
+• Revise frequently<br><br>
+
+💡 Tip: Repetition strengthens memory.
+        `;
+    }
+
+    // =========================
+    // FOCUS MODULE
+    // =========================
+    else if (
+        input.includes("focus") ||
+        input.includes("attention") ||
+        input.includes("concentrate")
+    ) {
+        return `
+🎯 <b>Focus Support</b><br><br>
+
+• Remove distractions<br>
+• Work in short intervals<br>
+• Take regular breaks<br>
+• Set small goals<br><br>
+
+💡 Tip: One task at a time works best.
+        `;
+    }
+
+    // =========================
+    // GENERAL SYSTEM
     // =========================
     else {
         return `
 ✨ <b>General Support System</b><br><br>
 
-I understand your input. Here is a simplified response:<br><br>
+I can help with learning difficulties, study support, memory, focus, and emotional stress.<br><br>
 
-• Try using clear keywords<br>
-• Break your question into parts<br>
-• Be specific for better guidance<br><br>
-
-💡 Example keywords:<br>
-dyslexia, study, stress
+💡 Try keywords like:<br>
+dyslexia, study, stress, memory, focus
         `;
     }
 }
