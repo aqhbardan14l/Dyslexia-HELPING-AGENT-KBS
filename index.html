@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dyslexia AI Support System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🧠 Dyslexia AI Support System</h1>
+        <p>Smart learning assistant for reading & comprehension support</p>
+    </header>
+
+    <!-- MAIN CARD -->
+    <div class="card">
+
+        <!-- INPUT SECTION -->
+        <div class="input-section">
+            <label>Enter your text / question</label>
+            <textarea id="userInput" placeholder="Type here..."></textarea>
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn" onclick="runAgent()">
+            Generate Support ⚡
+        </button>
+
+        <!-- OUTPUT -->
+        <div class="output-section">
+
+            <h3>AI Response</h3>
+
+            <div id="outputText" class="output-box">
+                Your response will appear here...
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Powered by Knowledge-Based System + AI Support Design</p>
+    </footer>
+
+</div>
+
+<script src="knowledgebase.js"></script>
+<script src="tools.js"></script>
+
+</body>
+</html>
